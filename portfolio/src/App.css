@@ -223,8 +223,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Banner */
 .banner {
-  margin-top: 0;
+  margin-top: -15px;
   padding: 260px 0 100px 0;
+  background-image: url('./assets/img/background.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -292,6 +293,87 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+/* Skills */
+.skill {
+  padding: 0 0 60px;
+  position: relative;
+}
+
+.skill-bx {
+  background: transparent;
+  border-radius: 40px;
+  text-align: center;
+  padding: 70px 50px;
+  margin-top: -60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skill h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: #b8b8b8;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.7em;
+  margin: 0 auto 50px auto;
+  max-width: 750px;
+}
+
+.skill-slider {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.skill-slider .item {
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-slider .item:hover {
+  transform: translateY(-8px);
+  background: #222;
+}
+
+.skill-slider .item img {
+  width: 70px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.skill-slider .item h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.skill-slider .item p {
+  font-size: 14px;
+  color: #a9a9a9;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.background-image-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.25;
+  pointer-events: none;
 }
 
 @media (max-width: 991px) {
